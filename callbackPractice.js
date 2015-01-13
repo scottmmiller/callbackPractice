@@ -145,6 +145,15 @@ uniq(names, function(uniqArr){
 
 
     //Code Here for each
+var each = function (arr, callback) {
+    for (var i = 0; i < arr.length; i++) {
+      item = arr[i];
+      indice = i;
+      callback(item, indice);
+    };
+};
+
+
 
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
 each(names, function(item, indice){

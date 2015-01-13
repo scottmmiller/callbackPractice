@@ -79,7 +79,7 @@ multiply(4, 3, function(answer){
 
 /* NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM */
 
-
+first
 
 
 
@@ -119,6 +119,16 @@ contains(names, 'Colt', function(result){
 
 
     //Code Here for uniq
+var uniq = function (arr, callback) {
+  var uniqArr = [];
+  for (var i in arr) {
+    if (uniqArr.indexOf(arr[i]) === -1) {
+      uniqArr.push(arr[i]);
+    };
+  };
+  callback(uniqArr);
+};
+
 
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
 uniq(names, function(uniqArr){
